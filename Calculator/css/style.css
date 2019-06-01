@@ -1,0 +1,36 @@
+body{
+	font-family:Arial;
+	font-size:15px;
+	line-height:1.5;
+	padding:0px;
+	margin:0px;
+}
+
+#customizecol{
+	margin:0px;
+	padding:0px;
+}
+
+
+#customizerow{
+	margin:0px;
+}
+
+.btnstyle{
+	width:23%;
+	border:0px;
+}
+
+.screenstyle{
+	width:94%;
+	
+}
+
+#table{
+	width:100%;
+	border:0px;
+}
+
+.table .td{
+	padding:0px;
+}

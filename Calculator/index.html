@@ -1,0 +1,65 @@
+<!Doctype html>
+<html>
+<head>
+	<title>Calculator Project</title>
+	<link rel="stylesheet" href="./css/style.css">
+	<script src="./js/script.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="container" id="customizecol">
+		<div class="row" id="customizerow">
+			<div class="col-lg-3">
+				<div class="table-responsive" id="table">
+				<h1>Calculator</h1>
+				<input type="text" name="screen" class="screenstyle" id="screen">
+				<table class="table">
+					<tr>
+						<td class="td">
+							<input type="button" class="btn btn-info btnstyle"  name="btn7" value="7" onclick="update(this.value)">
+							<input type="button" class="btn btn-info btnstyle"  name="btn8" value="8" onclick="update(this.value)">
+							<input type="button" class="btn btn-info btnstyle"  name="btn9" value="9" onclick="update(this.value)">
+							<input type="button" class="btn btn-success btnstyle" name="btn+" value="+" onclick="add()">
+						</td>
+					</tr>
+					</tr>
+					<tr>
+						<td class="td">
+							<input type="button" class="btn btn-info btnstyle"  name="btn4" value="4" onclick="update(this.value)">
+							<input type="button" class="btn btn-info btnstyle"  name="btn5" value="5" onclick="update(this.value)">
+							<input type="button" class="btn btn-info btnstyle"  name="btn6" value="6" onclick="update(this.value)">
+							<input type="button" class="btn btn-success btnstyle"  name="btn-" value="-" onclick="sub()">
+						</td>
+					</tr>
+					<tr>
+						<td class="td">
+							<input type="button" class="btn btn-info btnstyle"  name="btn1" value="1" onclick="update(this.value)">
+							<input type="button" class="btn btn-info btnstyle"  name="btn2" value="2" onclick="update(this.value)">
+							<input type="button" class="btn btn-info btnstyle"  name="btn3" value="3" onclick="update(this.value)">
+							<input type="button" class="btn btn-success btnstyle"  name="btnX" value="X" onclick="mul()">
+						</td>
+					</tr>
+					<tr>
+						<td class="td">
+							<input type="button" class="btn btn-success btnstyle"  value="Clr" onclick="clearscreen()">
+							<input type="button" class="btn btn-success btnstyle"  name="btn0" value="0" onclick="update(this.value)">
+							<input type="button" class="btn btn-success btnstyle"  name="btn=" value="=" onclick="result()">
+							<input type="button" class="btn btn-success btnstyle"  name="btn/" value="/" onclick="div()">
+						</td>
+					</tr>
+				</table>
+				</div>
+			</div>	
+		</div>
+	</div>
+
+</body>
+
+
+
+
+
+</html> 
