@@ -1,0 +1,149 @@
+<!Doctype html>
+<html>
+	<head>
+		<title>Project | Welcome</title>
+		<meta name="viewport" content="width=device-width">
+		<link rel="stylesheet" href="./css/style.css">
+	</head>
+	<body onload="meaninputs()">
+		<h1>Constraction of Robust control chart using process capability</h1>
+		<section id="container">
+			<div class="form">
+				<form id="inputform">
+					<h2>Enter Input Data:</h2>
+					<table class="table1" cellpadding="8">
+						<tbody>
+						<tr>
+							<td>Select:</td>
+							<td>
+								<select id="chart" onchange="display(this.value)">
+									<option value="mean">Mean Chart</option>
+									<option value="range">Range Chart</option>
+									<option value="sdrange">SD Chart</option>
+									<option value="meanrange">Mean using Range Chart</option>
+									<option value="meansd">Mean using SD Chart</option>
+									<option value="meansdvarying">Mean using SD Chart with Varying</option>
+									<option value="reg">Regression Chart</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+						</tr>
+						<tr id="sample" class="show">
+							<td>Sample:</td>
+							<td><input type="text" name="samp" size="9"></td>
+						</tr>
+						<tr id="mean" class="show">
+							<td>Mean:</td>
+							<td><input type="text" name="mean" size="9"></td>
+						</tr>
+						<tr id="sd" class="show">
+							<td>SD:</td>
+							<td><input type="text" name="sd" size="9"></td>
+						</tr>
+						<tr id="mad" class="show">
+							<td>MAD:</td>
+							<td><input type="text" name="mad" size="9"></td>
+						</tr>
+						<tr id="cp" class="show">
+							<td>Sigma Cp:</td>
+							<td><input type="text" name="cp" size="9"></td>
+						</tr>
+						<tr id="bn" class="show">
+							<td>bn:</td>
+							<td><input type="text" name="bn" size="9"></td>
+						</tr>
+						<tr id="rbar" class="show">
+							<td>R Bar:</td>
+							<td><input type="text" name="rbar" size="9"></td>
+						</tr>
+						<tr id="d3" class="show">
+							<td>d3:</td>
+							<td><input type="text" name="d3" size="9"></td>
+						</tr>
+						<tr id="d2" class="show">
+							<td>d2:</td>
+							<td><input type="text" name="d2" size="9"></td>
+						</tr>
+						<tr id="c4" class="show">
+							<td>C4:</td>
+							<td><input type="text" name="c4" size="9"></td>
+						</tr>
+						<tr id="sbar" class="show">
+							<td>SD Bar:</td>
+							<td><input type="text" name="sbar" size="9"></td>
+						</tr>
+						<tr id="a" class="show">
+							<td>a:</td>
+							<td><input type="text" name="a" size="9" required></td>
+						</tr>
+						<tr id="b" class="show">
+							<td>b:</td>
+							<td><input type="text" name="b" size="9"></td>
+						</tr>
+						</tbody>
+					</table>
+				</form>
+				<button onclick="displaytable()">Submit</button>
+				<p style="padding-left:10px;"><b>NOTE:</b> Please ensure all the fields were filled before submit button was clicked!!<p>
+			</div>
+			<div class="form1">
+				<div id="output">
+					<h2 id="x">Output Chart:</h2>
+					<hr>
+					<h2 id="result_0" style="color:white;text-align:center"></h2>
+					<hr>
+					<h2 id="result">Shewhart Control Chart for Mean</h2>
+					<table id="table" border="1">
+					<tr>
+						<td>UCL</td>
+						<td>Output</td>
+					</tr>
+					<tr>
+						<td>LCL</td>
+						<td>Output</td>
+					</tr>
+					<tr>
+						<td>CL</td>
+						<td>Output</td>
+					</tr>
+					</table>
+					<h2 id="result_1">Robust Control chart for mean based on MAD</h2>
+					<table id="table_1" border="1">
+					<tr>
+						<td>UCL</td>
+						<td>Output</td>
+					</tr>
+					<tr>
+						<td>LCL</td>
+						<td>Output</td>
+					</tr>
+					<tr>
+						<td>CL</td>
+						<td>Output</td>
+					</tr>
+					<table>
+					<h2 id="result_2">Process capability based on MAD</h2>
+					<table id="table_2" border="1">
+					<tr>
+						<td>UCL</td>
+						<td>Output</td>
+					</tr>
+					<tr>
+						<td>LCL</td>
+						<td>Output</td>
+					</tr>
+					<tr>
+						<td>CL</td>
+						<td>Output</td>
+					</tr>
+					</table>
+				</div>
+			</div>
+		</section>
+		<footer>
+			<p>BalaMurugan Project, Copyright &copy; 2019</p>
+		</footer>
+		<script src="./js/script.js"></script>
+	</body>	
+</html>
