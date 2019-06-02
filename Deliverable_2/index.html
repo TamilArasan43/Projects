@@ -1,0 +1,67 @@
+<!Doctype html>
+<html>
+	<head>
+		<title>Project | Welcome</title>
+		<meta name="viewport" content="width=device-width">
+		<link rel="stylesheet" href="./css/style.css">
+	</head>
+	<body >
+		<h1>Constraction of Non - Parametric Control Chart</h1>
+		<section id="container">
+			<div class="form">
+				<form id="inputform" methos="post">
+					<h2>Enter Input Data:</h2>
+					<table class="table1" cellpadding="8">
+						<tbody>
+						<tr>
+							<td>Select Chart:</td>
+							<td>
+								<select id="chart" onchange="load(this.value)">
+									<option value="meankw">Mean Chart</option>
+									<option value="rangegsr">Range Chart</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<td>Sample:</td>
+							<td><input type="text" name="sample" size="9"></td>
+						</tr>
+						<tr>
+							<td>Mean:</td>
+							<td><input type="text" name="mean" size="9"></td>
+						</tr>
+						<tr>
+							<td>SD:</td>
+							<td><input type="text" name="sd" size="9"></td>
+						</tr>
+						<tr>
+							<td>MAD:</td>
+							<td><input type="text" name="mad" size="9"></td>
+						</tr>
+						<tr>
+							<td>Sigma Cp:</td>
+							<td><input type="text" name="cp" size="9"></td>
+						</tr>
+						<tr>
+							<td>bn:</td>
+							<td><input type="text" name="bn" size="9"></td>
+						</tr>
+						</tbody>
+					</table>
+				</form>
+				<button onclick="displaytable()">Submit</button>
+				
+			</div>
+			<div class="form1">
+				<div id="output">
+					<h2 id="x">Output Chart:</h2>
+					<h2 id="result"></h2>
+				</div>
+			</div>
+		</section>
+		<footer>
+			<p>BalaMurugan Project, Copyright &copy; 2019</p>
+		</footer>
+		<script src="./js/script.js"></script>
+	</body>	
+</html>
